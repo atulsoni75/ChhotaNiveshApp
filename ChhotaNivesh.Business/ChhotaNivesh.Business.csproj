@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AppSettingManager.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChhotaNivesh.Common\ChhotaNivesh.Common.csproj" />
+    <ProjectReference Include="..\ChhotaNivesh.Models\ChhotaNivesh.Models.csproj" />
+    <ProjectReference Include="..\ChhotaNivesh.Services\ChhotaNivesh.Services.csproj" />
+  </ItemGroup>
+
+</Project>
