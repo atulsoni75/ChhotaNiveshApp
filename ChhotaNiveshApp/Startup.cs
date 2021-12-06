@@ -32,7 +32,9 @@ namespace ChhotaNiveshToolApp
             services.AddDbContext<DBContext>(options => options.UseSqlServer(
               Configuration.GetConnectionString("DefaultConnection")));
 
-     
+            services.AddDbContext<DBContextFD>(options => options.UseSqlServer(
+               Configuration.GetConnectionString("DefaultConnectionChhotaNiveshFD")));
+
 
             // configure strongly typed settings object
             services.Configure<ChhotaNivesh.Common.Models.AppSettings>(Configuration.GetSection("AppSettings"));

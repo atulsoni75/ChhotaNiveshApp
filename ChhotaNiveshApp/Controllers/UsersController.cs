@@ -29,7 +29,6 @@ namespace ChhotaNiveshToolApp.Controllers
             _authenticationService = authenticationService;
             _appSettings = appSettings.Value;
             _userService = userService;
-            var tt = _userService.GetAll().Result.ToList();
         }
 
         [HttpPost("Register")]
